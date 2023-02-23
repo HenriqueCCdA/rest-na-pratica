@@ -28,5 +28,5 @@ class Command(BaseCommand):
                     self.stdout.write(f'{count} Dados importados')
 
             if batch:
-                Author.objects.bulk_create(batch)
+                Author.objects.bulk_update(batch)
                 self.stdout.write(f'{count} Dados importados')
